@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#B4B838">
+
+    <RelativeLayout
+        android:id="@+id/sign_up_div"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="15dip"
+        android:background=""
+        android:padding="15dip">
+
+    <TextView
+        android:id="@+id/register_user_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:fontStyle="normal"
+        android:text="Username"
+        android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/username_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_user_input"
+            android:layout_centerHorizontal="true"
+            android:hint="Create Username"
+            android:inputType="text"
+            android:singleLine="true" />
+        <TextView
+            android:id="@+id/register_email_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="120dp"
+            android:fontStyle="normal"
+            android:text="E-mail Address"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/email_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_email_input"
+            android:layout_centerHorizontal="true"
+            android:hint="Enter e-mail address"
+            android:inputType="text"
+            android:singleLine="true" />
+        <TextView
+            android:id="@+id/register_password_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="220dp"
+            android:fontStyle="normal"
+            android:text="Set Password"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/password_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_password_input"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+        <TextView
+            android:id="@+id/register_password_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="320dp"
+            android:fontStyle="normal"
+            android:text="Confirm Password"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/password_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_password_confirm"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_confirm"
+            android:layout_alignRight="@id/password_edit"
+            android:gravity="center"
+            android:background=""
+            android:text="Sign up"
+            android:textColor="#255"
+            />
+    </RelativeLayout>
+</LinearLayout>
